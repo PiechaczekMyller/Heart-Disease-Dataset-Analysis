@@ -2,9 +2,9 @@ from sklearn.decomposition import PCA
 from sklearn.preprocessing import MinMaxScaler, StandardScaler
 import matplotlib.pyplot as plt
 
-from utils import load_data_frame
+from utils import load_numpy, load_dataframe
 
-data, labels = load_data_frame(r"processed.cleveland.data")
+data, labels = load_dataframe(r"processed.cleveland.data")
 
 # Normalize data
 scaler = StandardScaler()

@@ -4,13 +4,13 @@ import matplotlib.pyplot as plt
 from itertools import product
 
 
-from utils import load_data_frame
+from utils import load_numpy
 
 FEATURE_1 = 0
 FEATURE_2 = 4
 colors = ['red', 'green', 'blue', 'yellow']
 
-data, labels = load_data_frame(r"processed.cleveland.data")
+data, labels = load_numpy(r"processed.cleveland.data")
 
 # Normalize data
 scaler = MinMaxScaler()
